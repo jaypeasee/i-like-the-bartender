@@ -1,0 +1,15 @@
+{
+  "name": "i-like-the-bartender",
+  "version": "1.0.0",
+  "description": "Bartender Critter",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "JP Carey",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
