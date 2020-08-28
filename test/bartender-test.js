@@ -5,11 +5,11 @@ var Beer = require('../exercises/beer');
 
 describe('Bartender', function() {
 
-  it('should be a function', function() {
+  it.skip('should be a function', function() {
     assert.isFunction(Bartender);
   });
 
-  it('should have a name and a wage', function() {
+  it.skip('should have a name and a wage', function() {
     var bartender1 = new Bartender("Brad", 7.25);
     var bartender2 = new Bartender("Chad", 10.60);
 
@@ -19,13 +19,13 @@ describe('Bartender', function() {
     assert.equal(bartender2.hourlyWage, 10.60);
   });
 
-  it('should start with no beer orders', function() {
+  it.skip('should start with no beer orders', function() {
     var bartender = new Bartender("Craig", 6.75);
 
     assert.deepEqual(bartender.orders, []);
   });
 
-  it('should be able to take orders', function() {
+  it.skip('should be able to take orders', function() {
     var bartender = new Bartender("Chaz", 8.50);
 
     bartender.takeOrder("Grand Teton Brewing", "Bitch Creek", "Brown Ale", 7, 16);
@@ -39,7 +39,7 @@ describe('Bartender', function() {
     assert.equal(bartender.orders[0].volume, 16);
   });
 
-  it('can hold a limited number of beers on a tray', function() {
+  it.skip('can hold a limited number of beers on a tray', function() {
     var bartender = new Bartender("Chucky", 15);
 
     bartender.takeOrder("Threes Brewing", "Logical Conclusion", 'IPA', 12, 12);
@@ -57,7 +57,7 @@ describe('Bartender', function() {
     assert.equal(bartender.orders[4].name, "Earned It");
   });
 
-  it('can serve the beers when the tray is full', function() {
+  it.skip('can serve the beers when the tray is full', function() {
     var bartender = new Bartender("Mac", 9.50);
 
     bartender.takeOrder("Sierra Nevada", "Hazy Little Thing", "Pale Ale", 7, 20);
